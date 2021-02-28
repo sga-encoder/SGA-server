@@ -21,7 +21,7 @@
 .practice03 .container-dicctionary h1
 {
     position: absolute;
-    font-size: 8em;
+    font-size: 6em;
     text-transform: uppercase;
     color: #bbb;
 }
@@ -62,4 +62,18 @@
 .practice03 .dictionary2 ul li p
 {
     font-size: 0.6em;
+}
+
+@media(max-width: 670px){
+    .practice03 .container-dicctionary h1
+    {
+        font-size: 4.3em;
+    }
+}
+
+@media(max-width: 470px){
+    .practice03 .dictionary1
+    {
+        font-size: 10px;
+    }
 }

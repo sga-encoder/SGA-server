@@ -173,10 +173,27 @@ body
     transform:translateX(0)
 }
 
+
 .practice03 .background  .container .menu .content li a
 {
     text-decoration: none;
     color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 2em;
+    transition: .5s;
+    padding: 2% 5%;
+}
+
+.practice03 .background  .container .menu .content li:hover a,
+.practice03 .background  .container .menu .content li:active a
+{
+    color: #333;
+    background: #fff;
+    text-transform: lowercase;
+    letter-spacing: 5px;
+    font-weight: 500;
 }
 
 .practice03 .background  .container>.content
