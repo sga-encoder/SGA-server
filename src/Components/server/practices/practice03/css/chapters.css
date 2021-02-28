@@ -1,0 +1,169 @@
+.practice03 .backgroundChapters
+{
+    background: #636c80;
+}
+
+.practice03 .header-chapters
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../sources/bg2.jpg);
+    background-size: cover;
+}
+
+.practice03 .header-chapters::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #0005;
+    backdrop-filter: blur(3px);
+}
+
+.practice03 .header-chapters .container
+{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.practice03 .header-chapters .container h1
+{
+    font-size: 8em;
+    text-transform: uppercase;
+    color: #bbb;
+}
+
+.practice03 .fa-angle-down
+{
+    position: absolute;
+    bottom: 5%;
+    width: 100px;
+    animation: 1.5s flecha ease-in-out infinite;
+}
+
+.practice03 .fa-angle-down path
+{
+    fill: #bbb;
+}
+@keyframes flecha
+{
+    0%,100%{
+        transform: translateY(20px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+}
+
+.practice03 .chapters
+{
+    display: flex;
+    flex-direction: column;
+    color: #ccc;
+    width: 100%;
+    height: 100vh;
+}
+
+.practice03 .chapters .container
+{
+    background: rgba(255, 255, 255, 0.2);
+    width: 80%;
+    margin: 2.5% 10%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.practice03 .chapters .container h2
+{
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.practice03 .chapters .container .content
+{
+    padding: 0  25px;
+}
+
+.practice03 .chapters .container .content h3
+{
+    font-size: 1.7em;
+}
+
+.practice03 .chapters .container .content ul
+{
+    margin: 0 6%;
+}
+
+.practice03 .chapters .container .content li
+{
+    font-weight: 700;
+}
+
+.practice03 .chapters .container .content li span
+{
+    font-weight: normal;
+    color: #aaa;
+}
+
+.practice03 .chapters .container .content li span::before
+{
+    content: ':';
+    display: inline-block;
+    padding: 0 1% 0% 0%;
+    color: #ccc;
+    font-weight: 700;
+}
+
+.practice03 .chapters .container .content .bookQuote .textualQuote
+{
+    font-style: italic;
+    color: #999;
+    margin: 0 6%;
+}
+
+.practice03 .chapters .container .content .bookQuote .textualQuote::after
+{
+    content: "--Carlos Cuauhtémoc Sánchez--";
+    display: block;
+}
+
+.practice03 .chapters .container .content .bookQuote .textualQuote.confucio::after
+{
+    content: "--Confucio--";
+    display: block;
+}
+
+.practice03 .chapters .container .content .bookQuote .reflection
+{
+    margin: 0 2%;
+}
+
+@media(max-width: 460px)
+{
+    .practice03 .chapters .container
+    {
+        font-size: 14px;
+        width: 95%;
+        margin: 2.5% 3.3%;
+    }
+
+    .practice03 .chapters .container .content
+    {
+        padding: 0 1%;
+    }
+
+    .practice03 .chapters .container .content ul
+    {
+        margin: 0 2.5%;
+    }
+}

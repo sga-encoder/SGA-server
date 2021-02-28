@@ -1,0 +1,244 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+*::-webkit-scrollbar{
+    background: transparent;
+    width: 0px;
+}
+
+*::-webkit-scrollbar-thumb
+{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+}
+
+body
+{
+    scroll-behavior: smooth;
+}
+
+.background
+{
+    background: url(../sources/bg1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    position: sticky;
+    overflow: hidden;
+}
+
+.practice03 .background  .container
+{
+    background: #0007;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.practice03 .background  .container .menu
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.practice03 .background  .container .menu .toggle
+{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    width: 40px;
+    height: 40px;
+    background: url(../sources/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+
+}
+
+.practice03 .background  .container .menu .toggle::before
+{
+    content: 'menu';
+    position: absolute;
+    right: 45px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 1em;
+    padding: 3px 6px;
+    background: #5a2e19;
+    text-shadow: 0px 0px 3px #fff;
+}
+
+.practice03 .background.active .container .menu .toggle
+{
+    position: absolute;
+    background: url(../sources/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 30px;
+}
+
+.practice03 .background.active .container .menu .toggle::before
+{
+    content: 'cerrar';
+}
+
+.practice03 .background  .container .blur::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(50%);
+    backdrop-filter: blur(20px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.practice03 .background.active .container .blur::before
+{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.practice03 .background  .container .blur .wave
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    transition: 1s;
+}
+
+.practice03 .background  .container .blur .wave path
+{
+    fill: #fff;
+    transition: 1s;
+    height: 100vh;
+    opacity: .4;
+}
+
+.practice03 .background  .container .menu .content
+{
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100000;
+}
+
+.practice03 .background  .container .menu .content li
+{
+    list-style: none;
+    text-align: center;
+    margin: 15px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: translateX(200px);
+    transition-delay: calc(0.1s * var(--d));
+}
+
+.practice03 .background.active .container .menu .content li
+{
+    opacity: 1;
+    visibility: visible;
+    transform:translateX(0)
+}
+
+.practice03 .background  .container .menu .content li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.practice03 .background  .container>.content
+{
+    transition: .9s;
+}
+
+.practice03 .background.active .container>.content
+{
+    transform: translateX(-400px);
+    opacity: 0;
+}
+
+.practice03 .background  .container>.content h1
+{
+    font-size: 5em;
+    width: 70%;
+    line-height: 70px;
+    margin: 0 4.7%;
+}
+
+
+.practice03 .background  .container>.content h2
+{
+    font-size: 2em;
+    margin:2% 4.7%;
+
+}
+
+.practice03 .background  .container>.content a
+{
+    position: relative;
+    bottom: 28%;
+    left: 4.7%;
+    /* margin: 0 4.7%; */
+    color: #fff;
+    background: #442111;
+    display: inline-block;
+    padding: 1.5% 3%;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1em;
+    cursor: pointer;
+    z-index: 1000000;
+    transition: 1s;
+    text-shadow: 0px 0px 10px #fff;
+}
+
+.practice03 .background.active .container>.content a
+{
+    transform: translateX(-400px);
+    opacity: 0;
+}
+
+@media(max-width: 460px){
+    .practice03 .background  .container
+    {
+        font-size: 11px;
+    }
+    .practice03 .background  .container>.content h1
+    {
+        line-height: 50px;
+    }
+}

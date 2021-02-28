@@ -1,0 +1,127 @@
+.practice03 .navbar-container
+{
+    position: absolute;
+    width: 100%;
+    z-index: 200;
+}
+
+.practice03 .navbar-container::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(20px);
+    margin: 0;
+    z-index: 100;
+    transition: 1.5s;
+    transform: translateY(-100%);
+}
+
+.practice03 .navbar-container.active::before
+{
+    transform: translateY(0);
+}
+
+
+.practice03 .navbar-container .toggle
+{
+    position: absolute;
+    top: 30%;
+    right: 3%;
+    width: 40px;
+    height: 40px;
+    background: url(../sources/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    margin: 2% 0;
+}
+
+.practice03 .navbar-container .toggle::before
+{
+    content: 'menu';
+    position: absolute;
+    right: 45px;
+    text-transform: uppercase;
+    color: #222;
+    letter-spacing: 2px;
+    font-size: 1em;
+    padding: 3px 6px;
+    background: #fff;
+    font-weight: 700;
+    text-shadow: 0px 0px 3px #fff;
+}
+
+.practice03 .navbar-container.active .toggle
+{
+    position: absolute;
+    background: url(../sources/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 30px;
+}
+
+.practice03 .navbar-container.active .toggle::before
+{
+    content: 'cerrar';
+}
+
+.practice03 .navbar-container ul
+{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+.practice03 .navbar-container ul li
+{
+    margin: .5% 0;
+    padding: .4% 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    transition-delay: calc(var(--d) * .1s);
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.practice03 .navbar-container.active ul li
+{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.practice03 .navbar-container ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1.5em;
+    transition: .5s;
+    padding: 2% 5%;
+}
+
+.practice03 .navbar-container ul li:hover a
+{
+    color: #333;
+    background: #fff;
+    text-transform: lowercase;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
