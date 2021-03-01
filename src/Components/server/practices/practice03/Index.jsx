@@ -9,7 +9,7 @@ const Index = () => {
 	useEffect(() => {
 		document.body.style.background = '#29150b';
 		document.title = 'SGA|EL Feo'
-	}, []);
+	});
 
 	return (
 		<Fragment>
@@ -18,10 +18,18 @@ const Index = () => {
 				<section className={status ? 'background active' : 'background'}>
 					<div className="container">
 						<div className="menu">
-							<div className="toggle" onClick={() => { status ? setStatus(false) : setStatus(true) }}></div>
+							<div
+								className="toggle"
+								onClick={() => { status ? setStatus(false) : setStatus(true) }}
+							></div>
+
 							<div className="blur">
-								<svg className='wave' viewBox="0 0 300 150" preserveAspectRatio="none">
-									<path id='wavePath' d={status ? 'M0,0 C0,0 0,150 0,150 L300,150 L300,0 Z' : 'M160,0 C90,70.5 240,50 180,150 L300,150 L300,0 Z'} />
+								<svg
+									className='wave'
+									viewBox="0 0 300 150"
+									preserveAspectRatio="none">
+									<path id='wavePath'
+										d={status ? 'M0,0 C0,0 0,150 0,150 L300,150 L300,0 Z' : 'M160,0 C90,70.5 240,50 180,150 L300,150 L300,0 Z'} />
 								</svg>
 							</div>
 							<ul className="content">

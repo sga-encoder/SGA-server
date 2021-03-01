@@ -8,7 +8,7 @@ const ParallaxEffect = () => {
             <ul>
                 {
                     files.map((file) => (
-                        <li><Link to={'/parallax-effect/' + file}>{'ParallaxEffect' + file}</Link></li>
+                        <li key={file}><Link to={'/parallax_effect/' + file}>{'ParallaxEffect' + file}</Link></li>
                     ))
                 }
             </ul>

@@ -1,3 +1,8 @@
+.practice03
+{
+    font-family: Poppins;
+}
+
 .practice03 .container-dicctionary
 {
     background: url(../sources/bg3.jpg);
@@ -35,7 +40,7 @@
 {
     position: sticky;
     top: 3%;
-    background: #66380f;
+    background: #a55a18;
     font-size: 4em;
     padding: 1% 5%;
     border-radius: 40px;

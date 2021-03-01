@@ -14,13 +14,22 @@ const Navbar = () => {
                     <div className="toggle" onClick={() => { status ? setStatus(false) : setStatus(true) }}></div>
                     <ul>
                         <li style={{ '--d': 1 }}>
-                            <Link to="/practices/03" onClick={() => { status ? setStatus(false) : setStatus(true) }}>Hogar</Link>
+                            <Link
+                                to="/practices/03"
+                                onClick={() => { status ? setStatus(false) : setStatus(true) }}
+                            >Hogar</Link>
                         </li>
                         <li style={{ '--d': 2 }}>
-                            <Link to="/practices/03/chapters" onClick={() => { status ? setStatus(false) : setStatus(true) }}>Capitulos</Link>
+                            <Link
+                                to="/practices/03/chapters"
+                                onClick={() => { status ? setStatus(false) : setStatus(true) }}
+                            >Capitulos</Link>
                         </li>
                         <li style={{ '--d': 3 }}>
-                            <Link to="/practices/03/dictionary" onClick={() => { status ? setStatus(false) : setStatus(true) }}>Diccionario</Link>
+                            <Link
+                                to="/practices/03/dictionary"
+                                onClick={() => { status ? setStatus(false) : setStatus(true) }}
+                            >Diccionario</Link>
                         </li>
                     </ul>
                 </section>

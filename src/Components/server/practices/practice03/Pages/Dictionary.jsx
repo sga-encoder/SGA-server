@@ -4,7 +4,7 @@ import '../css/dictionary.css';
 const Dictionary = () => {
 
 	useEffect(() => {
-		document.body.style.background = '#a66328';
+		document.body.style.background = '#814006';
 		document.title = 'SGA|EL Feo'
 	})
 	return (
