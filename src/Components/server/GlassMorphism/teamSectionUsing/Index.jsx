@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import User1 from './user01.jpg'
 import User2 from './user02.jpg'
 import User3 from './user03.jpg'
-import '/style.css'
+import './style.css'
 
 
 const Index = () => {

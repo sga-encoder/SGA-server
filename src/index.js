@@ -8,17 +8,18 @@ import Cards from "./Components/server/Cards";
 import ClientTestmonial from "./Components/server/ClientTestimonial";
 import Clocks from './Components/server/Clocks';
 import GlassMorphism from './Components/server/GlassMorphism';
-import CreditCart from './Components/server/GlassMorphism/creditCart/Index'
+import CreditCart from './Components/server/GlassMorphism/creditCart/Index';
+import TeamSectionUsing from './Components/server/GlassMorphism/teamSectionUsing/Index'
 import JustForFun from './Components/server/JustForFun';
 import JustForFun01 from './Components/server/justForFun/justForFun01/Index';
 import Navbars from './Components/server/Navbars';
-import Navbar01 from './Components/server/navbars/navbar01/Index'
+import Navbar01 from './Components/server/navbars/navbar01/Index';
 import ParallaxEffect from './Components/server/ParallaxEffect';
 import ParallaxEffect01 from './Components/server/parallaxEffect/parallaxEffect01/Index'
 import Practices from './Components/server/Practices'
-import Practice01 from './Components/server/practices/practice01/Index'
-import Practice02 from './Components/server/practices/Practice02/Index'
-import Practice03 from './Components/server/practices/practice03/Index'
+import Practice01 from './Components/server/practices/practice01/Index';
+import Practice02 from './Components/server/practices/Practice02/Index';
+import Practice03 from './Components/server/practices/practice03/Index';
 import PracticeChapters from './Components/server/practices/practice03/Pages/Chapters';
 import PracticeDictionary from './Components/server/practices/practice03/Pages/Dictionary';
 import Practice03Navbar02 from "./Components/server/practices/practice03/Pages/Navbar";
@@ -39,6 +40,8 @@ ReactDOM.render(
 				<Route exact path='/client_testmonial' component={ClientTestmonial} />
 
 				<Route exact path='/clocks' component={Clocks} />
+
+				<Route exact path='/glass_morphism/team-section-using' component={TeamSectionUsing} />
 
 				<Route exact path='/glass_morphism/credit-card' component={CreditCart} />
 
