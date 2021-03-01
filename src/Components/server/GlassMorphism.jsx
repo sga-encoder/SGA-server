@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 
 const GlassMorphism = () => {
-    const files = ['credit-card', 'frosted-glass', 'team-section-using'];
+    const files = ['credit-card', 'team-section-using'];
     return (
         <Fragment>
             <ul>

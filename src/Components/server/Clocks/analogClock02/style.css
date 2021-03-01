@@ -1,0 +1,100 @@
+.clock02
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #091921;
+}
+
+.clock02 .clock
+{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./clock.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid #091921;
+    box-shadow: 
+        0 -15px 15px rgba(255, 255, 255, 0.05),
+        inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+        0 15px 15px rgba(0, 0, 0, 0.3),
+        inset 0 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.clock02 .clock::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    z-index: 100000;
+    border-radius: 50%;
+}
+
+.clock02 .hour,
+.clock02 .min,
+.clock02 .sec
+{
+    position: absolute;
+}
+
+.clock02 .hour, .clock02 .hr
+{
+    width: 160px;
+    height: 160px;
+}
+
+.clock02 .min, .clock02 .mn
+{
+    width: 190px;
+    height: 190px;
+}
+
+.clock02 .sec, .clock02 .sc
+{
+    width: 230px;
+    height: 230px;
+}
+.clock02 .hr,.clock02 .mn,.clock02 .sc
+{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.clock02 .hr::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: #ff105e;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.clock02 .mn::before
+{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: #fff;
+    z-index: 15;
+    border-radius: 6px 6px 0 0;
+}
+
+.clock02 .sc::before
+{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: #aaa;
+    z-index: 20;
+    border-radius: 6px 6px 0 0;
+}

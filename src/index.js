@@ -7,6 +7,9 @@ import Calculators from './Components/server/Calculators';
 import Cards from "./Components/server/Cards";
 import ClientTestmonial from "./Components/server/ClientTestimonial";
 import Clocks from './Components/server/Clocks';
+import Clock01 from "./Components/server/Clocks/analogClock01/Index";
+import Clock02 from "./Components/server/Clocks/analogClock02/Index";
+import Clock03 from "./Components/server/Clocks/analogClock03/Index";
 import GlassMorphism from './Components/server/GlassMorphism';
 import CreditCart from './Components/server/GlassMorphism/creditCart/Index';
 import TeamSectionUsing from './Components/server/GlassMorphism/teamSectionUsing/Index'
@@ -38,6 +41,12 @@ ReactDOM.render(
 				<Route exact path='/cards' component={Cards} />
 
 				<Route exact path='/client_testmonial' component={ClientTestmonial} />
+
+				<Route exact path='/clocks/03' component={Clock03} />
+
+				<Route exact path='/clocks/02' component={Clock02} />
+
+				<Route exact path='/clocks/01' component={Clock01} />
 
 				<Route exact path='/clocks' component={Clocks} />
 
