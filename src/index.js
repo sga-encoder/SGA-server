@@ -8,8 +8,11 @@ import Cards from "./Components/server/Cards";
 import ClientTestmonial from "./Components/server/ClientTestimonial";
 import Clocks from './Components/server/Clocks';
 import GlassMorphism from './Components/server/GlassMorphism';
+import CreditCart from './Components/server/GlassMorphism/creditCart/Index'
 import JustForFun from './Components/server/JustForFun';
+import JustForFun01 from './Components/server/justForFun/justForFun01/Index';
 import Navbars from './Components/server/Navbars';
+import Navbar01 from './Components/server/navbars/navbar01/Index'
 import ParallaxEffect from './Components/server/ParallaxEffect';
 import ParallaxEffect01 from './Components/server/parallaxEffect/parallaxEffect01/Index'
 import Practices from './Components/server/Practices'
@@ -27,45 +30,31 @@ ReactDOM.render(
 			<Switch>
 				<Route exact path='/' component={App} />
 
-				<Route exact path='/animated_background'>
-					<AnimateBackground />
-				</Route>
+				<Route exact path='/animated_background' component={AnimateBackground} />
 
-				<Route exact path='/calculators'>
-					<Calculators />
-				</Route>
+				<Route exact path='/calculators' component={Calculators} />
 
-				<Route exact path='/cards'>
-					<Cards />
-				</Route>
+				<Route exact path='/cards' component={Cards} />
 
-				<Route exact path='/client_testmonial'>
-					<ClientTestmonial />
-				</Route>
+				<Route exact path='/client_testmonial' component={ClientTestmonial} />
 
-				<Route exact path='/clocks'>
-					<Clocks />
-				</Route>
+				<Route exact path='/clocks' component={Clocks} />
 
-				<Route exact path='/glass_morphism'>
-					<GlassMorphism />
-				</Route>
+				<Route exact path='/glass_morphism/credit-card' component={CreditCart} />
 
-				<Route exact path='/just_for_fun'>
-					<JustForFun />
-				</Route>
+				<Route exact path='/glass_morphism' component={GlassMorphism} />
 
-				<Route exact path='/navbars'>
-					<Navbars />
-				</Route>
+				<Route exact path='/just_for_fun/01' component={JustForFun01} />
 
-				<Route exact path='/parallax_effect/01'>
-					<ParallaxEffect01 />
-				</Route>
+				<Route exact path='/just_for_fun' component={JustForFun} />
 
-				<Route exact path='/parallax_effect'>
-					<ParallaxEffect />
-				</Route>
+				<Route exact path='/navbars/01' component={Navbar01} />
+
+				<Route exact path='/navbars' component={Navbars} />
+
+				<Route exact path='/parallax_effect/01' component={ParallaxEffect01} />
+
+				<Route exact path='/parallax_effect' component={ParallaxEffect} />
 
 				<Route exact path='/practices/03/dictionary'>
 					<Practice03Navbar02 />
@@ -77,21 +66,13 @@ ReactDOM.render(
 					<PracticeChapters />
 				</Route>
 
-				<Route exact path='/practices/03'>
-					<Practice03 />
-				</Route>
+				<Route exact path='/practices/03' component={Practice03} />
 
-				<Route exact path='/practices/02'>
-					<Practice02 />
-				</Route>
+				<Route exact path='/practices/02' component={Practice02} />
 
-				<Route exact path='/practices/01'>
-					<Practice01 />
-				</Route>
+				<Route exact path='/practices/01' component={Practice01} />
 
-				<Route exact path='/practices'>
-					<Practices />
-				</Route>
+				<Route exact path='/practices' component={Practices} />
 			</Switch>
 		</Router>
 	</React.StrictMode>,

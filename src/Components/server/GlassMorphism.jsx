@@ -8,7 +8,7 @@ const GlassMorphism = () => {
             <ul>
                 {
                     files.map((file) => (
-                        <li><Link to={'/calculators/' + file}>{file}</Link></li>
+                        <li><Link to={'/glass_morphism/' + file}>{file}</Link></li>
                     ))
                 }
             </ul>

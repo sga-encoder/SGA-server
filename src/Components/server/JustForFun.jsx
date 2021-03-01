@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 
 const JustForFun = () => {
-    const files = ['01', '02', '03'];
+    const files = ['01'];
     return (
         <Fragment>
             <ul>

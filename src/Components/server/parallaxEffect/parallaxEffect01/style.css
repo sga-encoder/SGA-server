@@ -5,9 +5,10 @@
     height: 100vh;
     overflow: hidden;
     background: #111;
+    font-family: Poppins;
 
 }
-.text
+.parallax01 .text
 {
     position: relative;
     transform: skewY(345deg) translateY(-200px);
