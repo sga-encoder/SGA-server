@@ -2,10 +2,12 @@ import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './Components/App';
-import AnimateBackground from './Components/server/AnimatedBackground';
-import Calculators from './Components/server/Calculators';
 import Cards from "./Components/server/Cards";
+import Card01 from './Components/server/cards/card01/Index';
+import Card02 from './Components/server/cards/card02/Index';
+import Card03 from './Components/server/cards/card03/Index';
 import ClientTestmonial from "./Components/server/ClientTestimonial";
+import ClientTestmonial01 from './Components/server/clientTestimonial/clientTestimonial01/Index'
 import Clocks from './Components/server/Clocks';
 import Clock01 from "./Components/server/Clocks/analogClock01/Index";
 import Clock02 from "./Components/server/Clocks/analogClock02/Index";
@@ -34,13 +36,17 @@ ReactDOM.render(
 			<Switch>
 				<Route exact path='/' component={App} />
 
-				<Route exact path='/animated_background' component={AnimateBackground} />
+				<Route exact path='/cards/03' component={Card03} />
 
-				<Route exact path='/calculators' component={Calculators} />
+				<Route exact path='/cards/02' component={Card02} />
+
+				<Route exact path='/cards/01' component={Card01} />
 
 				<Route exact path='/cards' component={Cards} />
 
-				<Route exact path='/client_testmonial' component={ClientTestmonial} />
+				<Route exact path='/client_testimonial/01' component={ClientTestmonial01} />
+
+				<Route exact path='/client_testimonial' component={ClientTestmonial} />
 
 				<Route exact path='/clocks/03' component={Clock03} />
 

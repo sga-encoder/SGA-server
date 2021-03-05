@@ -5,13 +5,16 @@ const Clocks = () => {
     const files = ['01', '02', '03'];
     return (
         <Fragment>
-            <ul>
-                {
-                    files.map((file) => (
-                        <li><Link to={'/clocks/' + file}>{'clock' + file}</Link></li>
-                    ))
-                }
-            </ul>
+            <section className='server' >
+                <ul >
+                    {
+                        files.map((file) => (
+                            <li><Link to={'/clocks/' + file}>{'clock' + file}</Link></li>
+                        ))
+                    }
+                    <li className='back'><Link to='/'>Back</Link></li>
+                </ul>
+            </section>
         </Fragment>
     );
 };

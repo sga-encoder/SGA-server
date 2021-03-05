@@ -5,13 +5,17 @@ const Navbars = () => {
     const files = ['01'];
     return (
         <Fragment>
-            <ul>
-                {
-                    files.map((file) => (
-                        <li><Link to={'/navbars/' + file}>{'Navbars' + file}</Link></li>
-                    ))
-                }
-            </ul>
+            <section className='server' >
+                <ul >
+                    {
+                        files.map((file) => (
+                            <li><Link to={'/navbars/' + file}>{'Navbars' + file}</Link></li>
+                        ))
+                    }
+                    <li className='back'><Link to='/'>Back</Link></li>
+
+                </ul>
+            </section>
         </Fragment>
     );
 };

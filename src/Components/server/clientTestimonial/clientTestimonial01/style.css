@@ -1,14 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
-
-*
+.clientTestimonial01
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins';
-} 
+    font-family: Poppins;
+}
 
-section{
+.clientTestimonial01 section{
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -19,19 +14,14 @@ section{
     overflow: hidden;
 }
 
-img
-{
-    max-width: 100%;
-}
-
-.swiper-container 
+.clientTestimonial01 .swiper-container 
 {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.swiper-slide 
+.clientTestimonial01 .swiper-slide 
 {
     background-position: center;
     background-size: cover;
@@ -40,15 +30,16 @@ img
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
     filter: blur(4px);
     background: #d1ebff;
+    display: inline-block;
 }
 
-.swiper-slide-active
+.clientTestimonial01 .swiper-slide-active
 {
     filter: blur(0px);
     background: #fff;
 }
 
-.testimonialBox
+.clientTestimonial01 .testimonialBox
 {
     position: relative;
     width: 100%;
@@ -57,7 +48,7 @@ img
     color: #999;
 }
 
-.testimonialBox .quote
+.clientTestimonial01 .testimonialBox .quote
 {
     position: absolute;
     top: 20px;
@@ -65,14 +56,14 @@ img
     opacity: 0.2;
     width: 64px;
 }
-.testimonialBox .details
+.clientTestimonial01 .testimonialBox .details
 {
     display: flex;
     align-items: center;
     margin-top: 20px;
 }
 
-.testimonialBox .details .imgBx
+.clientTestimonial01 .testimonialBox .details .imgBx
 {
     position: relative;
     width: 60px;
@@ -82,7 +73,7 @@ img
     margin-right: 10px;
 }
 
-.testimonialBox .details .imgBx img
+.clientTestimonial01 .testimonialBox .details .imgBx img
 {
     position: absolute;
     top: 0;
@@ -92,7 +83,7 @@ img
     object-fit: cover;
 }
 
-.testimonialBox .details h3
+.clientTestimonial01 .testimonialBox .details h3
 {
     font-size: 16px;
     font-weight: 400;
@@ -101,14 +92,14 @@ img
     line-height: 1.1em;
 }
 
-.testimonialBox .details h3 span
+.clientTestimonial01 .testimonialBox .details h3 span
 {
     font-size: 12px;
     color: #666;
 } 
 
-/* .swiper-container-3d .swiper-slide-shadow-left, */
-/* .swiper-container-3d .swiper-slide-shadow-right */
-/* { */
-    /* background-image: none; */
-/* } */
+.clientTestimonial01 .swiper-container-3d .swiper-slide-shadow-left,
+.clientTestimonial01 .swiper-container-3d .swiper-slide-shadow-right
+{
+    background-image: none;
+}

@@ -1,20 +1,20 @@
 import React, { Fragment, } from 'react';
 import { Link, } from 'react-router-dom';
-
+import './App.css'
 
 
 const App = () => {
 
-    const folders = ['animated_background', 'calculators', 'cards', 'client_testmonial', 'clocks', 'glass_morphism', 'just_for_fun', 'navbars', 'parallax_effect', 'practices'];
+    const folders = [['cards', 'Cards'], ['client_testimonial', 'Client Testimonial'], ['clocks', 'Clocks'], ['glass_morphism', 'Glass Morphism'], ['just_for_fun', 'Just For Fun'], ['navbars', 'Navbar'], ['parallax_effect', 'Parallax Effect'], ['practices', 'Practices']];
 
     return (
         <Fragment>
-            <section>
+            <section className='server'>
 
                 <ul>
                     {
                         folders.map((folder) => (
-                            <li><Link to={"/" + folder}>{folder}</Link></li>
+                            <li><Link to={"/" + folder[0]}>{folder[1]}</Link></li>
                         ))
                     }
                 </ul>

@@ -5,13 +5,17 @@ const GlassMorphism = () => {
     const files = ['credit-card', 'team-section-using'];
     return (
         <Fragment>
-            <ul>
-                {
-                    files.map((file) => (
-                        <li><Link to={'/glass_morphism/' + file}>{file}</Link></li>
-                    ))
-                }
-            </ul>
+            <section className='server' >
+                <ul >
+                    {
+                        files.map((file) => (
+                            <li><Link to={'/glass_morphism/' + file}>{file}</Link></li>
+                        ))
+                    }
+                    <li className='back'><Link to='/'>Back</Link></li>
+
+                </ul>
+            </section>
         </Fragment>
     );
 };
